@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">ncuapptest</string>
+    <string name="startbtn">開始</string>
+    <string name="yourname">你的名字</string>
+    <string name="username">使用者名稱</string>
+    <string name="add">加入</string>
+    <string name="objectname">物件名稱</string>
+</resources>

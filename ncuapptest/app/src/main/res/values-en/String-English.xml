@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ncuapptest</string>
+    <string name="startbtn">start</string>
+    <string name="yourname">yourname</string>
+    <string name="username">username</string>
+    <string name="add">add</string>
+    <string name="objectname">objectname</string>
+</resources>
