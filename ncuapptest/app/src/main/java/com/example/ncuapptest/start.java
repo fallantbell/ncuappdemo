@@ -32,7 +32,14 @@ public class start extends AppCompatActivity implements CompoundButton.OnChecked
         setContentView(R.layout.activity_start);
         init();
         changelang.setOnCheckedChangeListener(this);
-
+        Resources resources = getResources();//預設中文
+        Configuration config = resources.getConfiguration();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        config.locale = Locale.TRADITIONAL_CHINESE;
+        resources.updateConfiguration(config, dm);
+        Message msg=new Message();
+        msg.what=1;
+        mHandler.sendMessage(msg);
     }
 
     private void init() {//初始宣告
@@ -73,6 +80,7 @@ public class start extends AppCompatActivity implements CompoundButton.OnChecked
         Intent it=new Intent(start.this,secondpage.class);
         it.putExtra("username",getusername);
         startActivity(it);
+        finish();
     }
 
     private Handler mHandler = new Handler(){
